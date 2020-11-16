@@ -10,6 +10,7 @@ class Quote extends BaseModel
         'quote', 'character_id', 'episode_id'
     ];
 
+    //navprops
     public function character()
     {
         return $this->belongsTo('App\Models\Character', 'character_id');

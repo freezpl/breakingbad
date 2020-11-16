@@ -176,6 +176,10 @@ return [
         App\Providers\HorizonServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        //MyProviders
+        App\Providers\EpisodesServiceProvider::class,
+        App\Providers\CharactersServiceProvider::class,
+        App\Providers\QuotesServiceProvider::class,
     ],
 
     /*

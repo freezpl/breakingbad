@@ -10,6 +10,13 @@ class Character extends BaseModel
         'name', 'birthday_date', 'occupations', 'photo', 'nickname', 'portrayed'
     ];
 
+    //mutators
+    public function getOccupationsAttribute($value)
+    {
+        return json_decode($value);
+    }
+
+    //navprops
     public function episodes()
     {
         return $this->belongsToMany('App\Models\Episode', 'episode_character');
